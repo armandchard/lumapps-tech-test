@@ -1,3 +1,13 @@
 .header {
     background-color: lumx-color-variant('primary', 'N');
 }
+
+img {
+    width: 100px;
+    height: 32px;
+    margin-right: 1rem;
+}
+
+.justify-between {
+    justify-content: space-between;
+}

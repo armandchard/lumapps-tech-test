@@ -1,3 +1,10 @@
 .search-field {
     background-color: white;
 }
+
+
+// I did this because when I i'm in mobile view the icon is wrapped
+// so i'm overriding this to let icon on same line
+.lumx-text-field__wrapper {
+    flex-wrap: nowrap !important;
+}

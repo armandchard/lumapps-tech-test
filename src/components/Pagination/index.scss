@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+    button {
+        margin: 0 3px;
+        width: 32px;
+        height: 32px;
+        border: none;
+        background-color: white;
+        font-weight: 400;
+        font-size: 12px;
+        border-radius: 50%;
+        visibility: visible;
+
+        &.active {
+            background-color: #60a5fa;
+            color: white;
+        }
+
+        &.disabled {
+            pointer-events: none;
+            box-shadow: none;
+            color: #999;
+        }
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: $box-shadow;
+            background-color: #60a5fa;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.hero-item-container {
+    display: grid;
+    padding: 1rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-areas: "avatar"
+                         "description";
+    
+    border-radius: 0.4rem;
+    background-color: white;
+    box-shadow: $box-shadow;
+    justify-items: center;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 120px  max(75%) ;
+        grid-template-areas:  "avatar description";
+        justify-items: start;
+        
+    }
+
+    .avatar {
+        grid-area: "avatar";
+        width: 120px;
+        height: 120px;
+    }
+    
+    .description {
+        grid-area: "description";
+        display: flex;
+        align-items: center;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $text-color;
+        // max-height: 160px;
+        min-height: 70px;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            align-items: flex-start;
+        }
+
+        p {
+            max-height: 100px;
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -ms-box-orient: vertical;
+            box-orient: vertical;
+            -webkit-line-clamp: 5;
+            -moz-line-clamp: 5;
+            -ms-line-clamp: 5;
+            line-clamp: 5;
+            overflow: hidden;
+            @media screen and (min-width: 768px) {
+                align-items: flex-start;
+            }
+        }
+
+        .btn {
+            grid-area: action;
+            margin-top: 1rem;
+            padding: 0.3rem 1rem;
+            font-weight: 500;
+            color: white;
+            background-color: #60a5fa;
+            text-decoration: none;
+            width: fit-content;
+            border-radius: 0.5rem;
+        }
+    }
+}

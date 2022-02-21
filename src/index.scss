@@ -1,5 +1,10 @@
 @import '~@lumx/core/scss/lumx-theme-lumapps.scss';
 
+// Variables
+$text-color: #1f2937;
+$box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$light-grey: #e5e7eb;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $light-grey;
 }
 
 code {
@@ -17,3 +23,10 @@ code {
 @import './App/App.scss';
 @import './components/Header/index.scss';
 @import './components/SearchField/index.scss';
+@import './components/Search/index.scss';
+@import './components/Hero/index.scss';
+@import './components/HeroListItem/index.scss';
+@import './components/Pagination/index.scss';
+
+
+
